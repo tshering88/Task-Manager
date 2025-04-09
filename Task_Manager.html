@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="Task_Manager.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Manager</h1>
+
+        <div class="input-group">
+            <input type="text" id="task-input" placeholder="Add a new task..."/>
+            <button id="add-task">Add Task</button>
+    </div>
+
+    <div class="filter-group">
+        <button class="filter-btn active" data-fliter="all">All</button>
+        <button class="filter-btn" data-fliter="active">Active</button>
+        <button class="filter-btn" data-fliter="completed">Completed</button>
+    </div>
+
+    <ul class="task-list" id="task-list">
+        <!--Tasks will be dynamically added here-->
+    </ul>
+
+    <div class="empty-message" id="empty-message">No tasks to display.</div>
+
+<script src="Task_Manager.js" defer></script>
+</body>
+</html>
